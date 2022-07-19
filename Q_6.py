@@ -33,16 +33,22 @@
 # 82256014
 
 # 입력 변수
-n = 10000 
+n = 10 
 
 sum = 0 
 
 list = list(range(1, n+1))
 
-for i in list:
-    nn = i 
-    for ii in range(1, nn+1):
-        if nn%ii == 0:
-            sum += ii
-print(sum)
+# for i in list:
+#     nn = i 
+#     for ii in range(1, nn+1):
+#         if nn%ii == 0:
+#             sum += ii
+# print(sum)
 
+
+for i in list:
+    # 1~10 * (10을 i로 나눈 몫)
+    sum += i*(n//i)
+
+print(sum)
